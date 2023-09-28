@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import url("https://fonts.cdnfonts.com/css/thicker");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.fondo-body {
+  background-image: url("../assets/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Thicker", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+}
+header img {
+  width: 100%;
+  height: auto; /* Asegura que la altura se ajuste automáticamente para mantener la proporción */
+  display: block; /* Evita espacios en blanco debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+footer {
+  width: 100%;
+}
+footer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.flex-landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.flex-landing div {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-envase {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.img-envase img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el botón con doble borde */
+.button {
+  display: inline-block;
+  padding: 8px 22px;
+  background: linear-gradient(180deg, #1E97D4 0%, #7D2082 100%);
+  border: 2px solid #fff;
+  border-radius: 49px;
+  color: #FFF;
+  text-decoration: none;
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.button::before {
+  content: ""; /* Crea un pseudo-elemento para el segundo borde */
+  position: absolute;
+  top: -4px; /* Ajusta la posición del segundo borde */
+  left: -4px; /* Ajusta la posición del segundo borde */
+  right: -4px; /* Ajusta la posición del segundo borde */
+  bottom: -4px; /* Ajusta la posición del segundo borde */
+  border: 3px solid #7D2082; /* Borde interior */
+  border-radius: 49px;
+}/*# sourceMappingURL=main.css.map */
