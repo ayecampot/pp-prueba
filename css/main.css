@@ -28,13 +28,14 @@ header {
 }
 header img {
   width: 100%;
-  height: auto; /* Asegura que la altura se ajuste automáticamente para mantener la proporción */
-  display: block; /* Evita espacios en blanco debajo de la imagen */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
   width: 100%;
+  position: sticky;
 }
 footer img {
   width: 100%;
@@ -52,19 +53,14 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center; /* Centra los elementos verticalmente */
 }
 .flex-landing div {
-  margin: 10px 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
+  margin: 5px 0; /* Ajusta el margen entre los elementos */
 }
 
 .img-envase {
-  width: 98%;
-  max-width: 400px;
+  max-width: 90%; /* En lugar de 98% para dejar un poco más de espacio */
   margin: 20px auto;
 }
 .img-envase img {
@@ -102,5 +98,22 @@ img {
 }
 
 .traslate-50 {
-  transform: translateY(-35%);
+  transform: translateY(-20%);
+}
+
+@media screen and (min-width: 380px) {
+  .flex-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center; /* Centra los elementos verticalmente */
+  }
+  .flex-landing div {
+    margin: 9px 0; /* Ajusta el margen entre los elementos */
+  }
+  .img-envase {
+    max-width: 100%;
+    margin: 20px auto;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,79 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @import url('https://fonts.cdnfonts.com/css/thicker');
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .fondo-body {
-    background-image: url("../assets/fondo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+@import url('https://fonts.cdnfonts.com/css/thicker');
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.fondo-body {
+  background-image: url("../assets/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Thicker', sans-serif;
+}
 
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  header {
-    width: 100%;
-    img {
-    width: 100%;
-      height: auto; /* Asegura que la altura se ajuste automáticamente para mantener la proporción */
-      display: block; /* Evita espacios en blanco debajo de la imagen */
-      margin: 0 auto; /* Centra la imagen horizontalmente */
-    }
-  }
-  
-  footer {
-    width: 100%;
-    img {
-        width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-  }
-  
-  section {
-    max-width: 100%;
-  }
-  
-  .flex-landing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  
-    div {
-      margin: 10px 0;
-    }
-  }
-  
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
   img {
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
-  
-  .img-envase {
-    width: 98%;
-    max-width: 400px;
-    margin: 20px auto;
-  
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+}
+
+footer {
+  width: 100%;
+  position: sticky;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
+}
+
+section {
+  max-width: 100%;
+}
+.flex-landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  justify-content: center; /* Centra los elementos verticalmente */
+  
+  div {
+    margin: 5px 0; /* Ajusta el margen entre los elementos */
+  }
+}
+
+.img-envase {
+  max-width: 90%; /* En lugar de 98% para dejar un poco más de espacio */
+  margin: 20px auto;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 /* Estilos para el botón con doble borde */
 .button {
@@ -104,8 +98,28 @@
   border-radius: 49px;
 }
 
-.traslate-50{
-  transform: translateY(-35%)
+.traslate-50 {
+  transform: translateY(-20%);
 }
+
+
+@media screen and (min-width: 380px) {
+  .flex-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   
-  
+    justify-content: center; /* Centra los elementos verticalmente */
+    
+    div {
+      margin: 9px 0; /* Ajusta el margen entre los elementos */
+    }
+  }
+
+  .img-envase {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+}
