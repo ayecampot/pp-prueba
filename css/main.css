@@ -35,7 +35,7 @@ header img {
 
 footer {
   width: 100%;
-  position: sticky;
+  margin-top: 90px;
 }
 footer img {
   width: 100%;
@@ -59,13 +59,18 @@ section {
   margin: 5px 0; /* Ajusta el margen entre los elementos */
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .img-envase {
-  max-width: 90%; /* En lugar de 98% para dejar un poco más de espacio */
-  margin: 20px auto;
+  margin: 0px auto;
 }
 .img-envase img {
   max-width: 100%;
   height: auto;
+  transform: translateY(-4%);
 }
 
 /* Estilos para el botón con doble borde */
@@ -98,22 +103,23 @@ section {
 }
 
 .traslate-50 {
-  transform: translateY(-20%);
+  position: absolute;
+  transform: translateY(190%);
 }
 
 @media screen and (min-width: 380px) {
-  .flex-landing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center; /* Centra los elementos verticalmente */
+  footer {
+    width: 100%;
+    margin-top: 11rem;
   }
-  .flex-landing div {
-    margin: 9px 0; /* Ajusta el margen entre los elementos */
+  footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
-  .img-envase {
-    max-width: 100%;
-    margin: 20px auto;
+  .traslate-50 {
+    position: absolute;
+    transform: translateY(220%);
   }
 }/*# sourceMappingURL=main.css.map */
