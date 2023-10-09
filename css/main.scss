@@ -46,7 +46,6 @@
   
   section {
     max-width: 100%;
-    padding: 20px;
   }
   
   .flex-landing {
@@ -66,7 +65,7 @@
   }
   
   .img-envase {
-    width: 80%;
+    width: 98%;
     max-width: 400px;
     margin: 20px auto;
   
@@ -85,15 +84,13 @@
   border-radius: 49px;
   color: #FFF;
   text-decoration: none;
-
   position: relative;
   color: #FFF;
-text-align: center;
-
-font-size: 18px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 
 .button::before {
@@ -105,6 +102,10 @@ line-height: normal;
   bottom: -4px; /* Ajusta la posición del segundo borde */
   border: 3px solid #7D2082; /* Borde interior */
   border-radius: 49px;
+}
+
+.traslate-50{
+  transform: translateY(-35%)
 }
   
   

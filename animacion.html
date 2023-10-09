@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+    <title>Animación Pow Patrol</title>  
+</head>
+<body class="fondo-m">
+
+    <div id="animation"></div>
+    <script>
+        var animationContainer = document.getElementById('animation');
+        var animationData = '../assets/animations/json/animacion-1.json'; // Ruta al archivo JSON de la animación
+
+        // Carga y reproduce la animación
+        var animation = lottie.loadAnimation({
+            container: animationContainer,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: animationData
+        });
+    </script>
+</body>
+</html>
