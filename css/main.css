@@ -70,7 +70,7 @@ img {
 .img-envase img {
   max-width: 100%;
   height: auto;
-  transform: translateY(-4%);
+  transform: translateY(-8%);
 }
 
 /* Estilos para el botón con doble borde */
@@ -107,6 +107,22 @@ img {
   transform: translateY(190%);
 }
 
+@media screen and (max-width: 325px) {
+  footer {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .traslate-50 {
+    position: absolute;
+    transform: translateY(180%);
+  }
+}
 @media screen and (min-width: 380px) {
   footer {
     width: 100%;
